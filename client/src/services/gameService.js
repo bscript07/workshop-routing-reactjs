@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:3030/jsonstore/catalogue';
+const baseURL = 'http://localhost:3030/jsonstore/games';
 import { request } from '../lib/request';
 
 export const getAll = async () => {
