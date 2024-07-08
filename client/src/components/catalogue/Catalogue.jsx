@@ -1,8 +1,19 @@
+import { useEffect, useState } from 'react';
+import * as gameService from "../../services/gameService";
+
 const Catalogue = () => {
+
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    gameService.getAll()
+      .then(result => setGames(result))
+  }, []);
+
+  console.log(games)
   return (
     <section id="catalog-page">
       <h1>All Games</h1>
-      {/* <!-- Display div: with information about every game (if any) --> */}
       <div className="allGames">
         <div className="allGames-info">
           <img src="./images/avatar-1.jpg" />

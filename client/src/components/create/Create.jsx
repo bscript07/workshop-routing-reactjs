@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import * as gamesService from "../../services/gameService";
+import * as gameService from "../../services/gameService";
 
 const Create = () => {
   const navigate = useNavigate();
