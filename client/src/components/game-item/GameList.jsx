@@ -4,9 +4,9 @@ export default function GameList({
     imageUrl
 }) {
     return (
-        <div className="allGames">
+      <div className="allGames">
         <div className="allGames-info">
-          <img src={imageUrl} />
+          <img src={imageUrl} alt={title} />
           <h6>{category}</h6>
           <h2>{title}</h2>
           <a href="#" className="details-button">
